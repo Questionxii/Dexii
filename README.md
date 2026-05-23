@@ -1,3 +1,3 @@
-https://questionxii.github.io/Dexii/
+https://questionxii.github.io/Dexii/ - ongoing
 
 under backtesting - 🦅 Algorithmic Live Signal Desk
