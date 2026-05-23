@@ -1,1 +1,2 @@
-#🦅 Algorithmic Live Signal Desk (ongoing)
+#🦅 Algorithmic Live Signal Desk
+(ongoing)
