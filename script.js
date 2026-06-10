@@ -1,5 +1,4 @@
 // JavaScript Document
-window.location.href = "login.html";
 function switchChart(tabId) {
     const tabs = document.querySelectorAll('.chart-tab');
     tabs.forEach((tab, index) => {
