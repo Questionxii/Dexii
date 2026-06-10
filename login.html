@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTH | PROJECT DEX</title>
+<style>
+        :root { --bg: #02040a; --panel: #070b19; --accent: #00ff99; --text: #e2e8f0; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .login-card { background: var(--panel); border: 1px solid #1e293b; padding: 40px; border-radius: 8px; width: 350px; text-align: center; }
+        h1 { color: var(--accent); font-size: 24px; margin-bottom: 20px; letter-spacing: 2px; }
+        input { width: 100%; background: #02040a; border: 1px solid #334155; padding: 12px; color: white; margin-bottom: 15px; border-radius: 4px; box-sizing: border-box; outline: none; }
+        button { width: 100%; background: var(--accent); color: #02040a; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+    </style>
+    <link href="home.html.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="login-card">
+    <h1>PROJECT DEX</h1>
+    <input type="password" id="apiKey" placeholder="ENTER ACCESS KEY">
+    <button onclick="authenticate()">INITIALIZE TERMINAL</button>
+    <div id="status" style="font-size:10px; margin-top:15px; color:#64748b;">STATUS: AWAITING CREDENTIALS</div>
+</div>
+
+<script>
+    const MASTER_KEY = "DEX2026";
+	function authenticate() {
+        const input = document.getElementById('apiKey').value;
+        const status = document.getElementById('status');
+        if(input === MASTER_KEY) {
+            status.innerText = "ACCESS GRANTED. LOADING CORE...";
+            localStorage.setItem('dex_session', 'ACTIVE');
+            setTimeout(() => window.location.href = "index.html", 1000);
+        } else {
+            status.innerText = "ACCESS DENIED: INVALID KEY";
+            status.style.color = "#ff4444";
+        }
+    }
+</script>
+</body>
+</html>
