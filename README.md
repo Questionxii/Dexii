@@ -4,6 +4,6 @@ https://questionxii.github.io/Dexii/ - ongoing
 # ONGOING
 🦅 Algorithmic Live Signal Desk
 
-LOGIN
+LOGIN DISCON
 
 PASS - ALL CAPS
